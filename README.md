@@ -13,4 +13,8 @@ for use with Custom Post Types and Custom Taxonomies
 
 In addition to the standard WP widgets this plugin also includes an Authors Widget.
 
+Besides just creating the widgets, these templates also will create all the necessary rewrite rules
+when they are needed, for example date archives specific to a post type. Also included in each template
+is a function that will automatically create a Widget Area in WP that matches the post type.
+
 See instructions for using these widget templates in each of the completed templates.
