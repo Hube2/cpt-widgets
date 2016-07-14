@@ -11,7 +11,7 @@ for use with Custom Post Types and Custom Taxonomies
 * Category (Taxonomy) Widget
 * Tag Cloud (Taxonomy) Widget
 
-In addition to the standard WP widgets this plugin also includes an Authors Widget.
+In addition to the standard WP widgets there is also an Authors Widget.
 
 Besides just creating the widgets, these templates also will create all the necessary rewrite rules
 when they are needed, for example date archives specific to a post type. Also included in each template
