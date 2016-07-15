@@ -63,6 +63,23 @@
 		);
 	} // end function register_sidebar_CPT_LOWER_NICE_NAME_archive_widget
 	
+	/*
+		THIS IS EXAMPLE CODE FOR ADDING THE SIDEBAR TO YOUR TEMPLATE
+		
+		<?php 
+			if (is_active_sidebar('CPT_SLUG-sidebar')) {
+				?>
+					<div id="CPT_SLUG-sidebar" class="primary-sidebar widget-area" role="complementary">
+						<?php 
+							dynamic_sidebar('CPT_SLUG-sidebar');
+						?>
+					</div>
+				<?php 
+			}
+		?>
+	
+	*/
+	
 	// register the widget
 	add_action('widgets_init', 'register_CPT_LOWER_NICE_NAME_archive_widget');
 	function register_CPT_LOWER_NICE_NAME_archive_widget() {
@@ -196,11 +213,13 @@
 			$instance['title'] = sanitize_text_field($new_instance['title']);
 			$instance['count'] = $new_instance['count'] ? 1 : 0;
 			$instance['dropdown'] = $new_instance['dropdown'] ? 1 : 0;
+			$instance['type'] = $new_instance['type'];
+			$instance['limit'] = $new_instance['limit'];
 	
 			return $instance;
 		} // end public function update
 		
-		public function form( $instance ) {
+		public function form($instance) {
 			$instance = wp_parse_args(
 				(array) $instance, 
 				array(
@@ -233,8 +252,8 @@
 								$options = array(
 									'yearly' => __('Yearly'),
 									'monthly' => __('Monthly'),
-									'daily' => __('Daily'),
 									'weekly' => __('Weekly'),
+									'daily' => __('Daily'),
 									'postbypost' => __('Individual Posts by Post Date'),
 									'alpha' => __('Individual Posts by Title')
 								);
@@ -266,12 +285,12 @@
 				</p>
 				<p>
 					<label for="<?php
-							echo $this->get_field_id('type'); ?>"><?php 
+							echo $this->get_field_id('limit'); ?>"><?php 
 							_e('Limit (0 for no limit)'); ?></label>
 					<input type="number" class="tiny-text" size="3" value="<?php 
 							echo esc_attr($instance['limit']); ?>" min="0" step="1" id="<?php
-							echo $this->get_field_id('type'); ?>" name="<?php 
-							echo $this->get_field_name('type') ?>" />
+							echo $this->get_field_id('limit'); ?>" name="<?php 
+							echo $this->get_field_name('limit') ?>" />
 				</p>
 			<?php
 		} // end public function form
