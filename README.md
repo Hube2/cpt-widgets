@@ -6,7 +6,7 @@ These are a collection of widget templates for use with WordPress (WP)
 
 These widget templates recreate the following standard WP widgets
 for use with Custom Post Types and Custom Taxonomies
-* Date Archive Widget
+* Date Archive Widget (completed)
 * Recent Posts Widget
 * Category (Taxonomy) Widget
 * Tag Cloud (Taxonomy) Widget
