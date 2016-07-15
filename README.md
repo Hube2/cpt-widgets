@@ -2,21 +2,32 @@
 
 ***Work in Progress***
 
-These are a collection of widget templates for use with WordPress (WP)
+These are a collection of widgets for use with WordPress (WP)
 
-These widget templates recreate the following standard WP widgets
-for use with Custom Post Types and Custom Taxonomies
-* Date Archive Widget *(completed)*
-* ~~Recent Posts Widget~~ This is not needed. Use the Date Archive Widget, set the type to "Individual Posts
-by Post Date" and set the limit to the number of posts you want to display. Add the title you want
-like "Recent News" or whatever.
-* Category (Taxonomy) Widget
-* Tag Cloud (Taxonomy) Widget
+## Custom Post Type Archives Widget
+### (CPT-archives-widget.php)
 
-In addition to the standard WP widgets there is also an Authors Widget.
+This is a widget themplate that can be used to create a date archives widget for a custom post type.
+see comment in the widget for details and instructions.
 
-Besides just creating the widgets, these templates also will create all the necessary rewrite rules
-when they are needed, for example date archives specific to a post type. Also included in each template
-is a function that will automatically create a Widget Area in WP that matches the post type.
+This file also includes all the necessay rewrite rules to make date archives work
+on a custom post type.
 
-See instructions for using these widget templates in each of the completed templates.
+This widget can also be used as a "Recent Posts" widget for a custom post type. Set the type to
+"Individual Posts by Post Date" and set the limit to the number of posts you want to display.
+
+## Taxonomy Widget
+### (taxonomy-widget.php)
+
+This is a widget that is similar to the WP Category widget. This widget will let you choose any taxonomy
+to use for the terms displayed by the widget.
+
+## Taxonomy Cloud Widget
+### (taxonomy-cloud-widget.php)
+
+This is a widget that is simialr to the WP Tag Cloud widget. Like the Taxonomy Widget, it let's you
+choose what taxonomy to use.
+
+## Authors Widget
+
+working out the details...
