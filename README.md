@@ -7,7 +7,9 @@ These are a collection of widget templates for use with WordPress (WP)
 These widget templates recreate the following standard WP widgets
 for use with Custom Post Types and Custom Taxonomies
 * Date Archive Widget *(completed)*
-* Recent Posts Widget
+* ~~Recent Posts Widget~~ This is not needed. Use the Date Archive Widget, set the type to "Individual Posts
+by Post Date" and set the limit to the number of posts you want to display. Add the title you want
+like "Recent News" or whatever.
 * Category (Taxonomy) Widget
 * Tag Cloud (Taxonomy) Widget
 
