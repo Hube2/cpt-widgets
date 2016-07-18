@@ -8,13 +8,13 @@ These are a collection of widgets for use with WordPress (WP)
 **(CPT-archives-widget.php)**
 
 This is a widget themplate that can be used to create a date archives widget for a custom post type.
-see comment in the widget for details and instructions.
+See comment in the file for details and instructions.
 
 This file also includes all the necessay rewrite rules to make date archives work
 on a custom post type.
 
-This widget can also be used as a "Recent Posts" widget for a custom post type. Set the type to
-"Individual Posts by Post Date" and set the limit to the number of posts you want to display.
+This widget can also be used as a "Recent Posts" widget for a custom post type by setting the type to
+"Individual Posts by Post Date" and setting the limit to the number of posts you want to display.
 
 ## Taxonomy Widget
 **(taxonomy-widget.php)**

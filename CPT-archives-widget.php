@@ -15,10 +15,10 @@
 	         OR
 	         
 	         Copy and past code into your theme's functions.php file or other location
-					 
-					 OR
-					 
-					 Can easily be added to a plugin
+	         
+	         OR
+	         
+	         Can easily be added to a plugin
 			     
 			  2) search for CPT_NICE_NAME and replace with your Custom Post Type name
 			     with no special characters or spaces, use underscores
