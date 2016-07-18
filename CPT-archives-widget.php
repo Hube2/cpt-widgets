@@ -20,22 +20,22 @@
 	         
 	         Can easily be added to a plugin
 			     
-			  2) search for CPT_NICE_NAME and replace with your Custom Post Type name
-			     with no special characters or spaces, use underscores
-			     example: News_Archive
-			     
-			  3) Search for CPT_LOWER_NICE_NAME and replace with youir custom post type name
-			     this may actually be the same as 2 but this one requires lower case letters
-			     example: news_archive
-			     
-			  4) Search for CPT_NAME and replace with the Plural Label value of your Custom Post Type
-			     example: News Archive
-			     
-			  5) Search for CPT_SLUG and replace with your Custom Post Type Slug
-			     example: news-archive
-			     
-			  6) See other comments for important infromation
-		
+	      2) search for CPT_NICE_NAME and replace with your Custom Post Type name
+	         with no special characters or spaces, use underscores
+	         example: News_Archive
+	         
+	      3) Search for CPT_LOWER_NICE_NAME and replace with youir custom post type name
+	         this may actually be the same as 2 but this one requires lower case letters
+	         example: news_archive
+	         
+	      4) Search for CPT_NAME and replace with the Plural Label value of your Custom Post Type
+	         example: News Archive
+	         
+	      5) Search for CPT_SLUG and replace with your Custom Post Type Slug
+	         example: news-archive
+	         
+	      6) See other comments for important infromation
+	         
 	*/
 	
 	add_action('widgets_init', 'register_sidebar_CPT_LOWER_NICE_NAME_archive_widget');
